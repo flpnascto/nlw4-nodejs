@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
-import { getRepository } from 'typeorm';
-import { User } from '../models/User';
+import { getCustomRepository } from 'typeorm';
+import { UserRepository } from '../repositories/UserRepository';
 
 class UserController {
   async create(request: Request, response: Response) {
     const { name, email } = request.body;
 
-    const usersRepository = getRepository(User);
+    const usersRepository = getCustomRepository(UserRepository);
 
     // SELECT * FROM users WHERE email = "email" LIMIT 1;
     const userAlreadyExists = await usersRepository.findOne({
@@ -31,4 +31,4 @@ class UserController {
   }
 }
 
-export { UserController }
+export { UserController };
