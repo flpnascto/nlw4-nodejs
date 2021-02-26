@@ -1,0 +1,67 @@
+<style>
+  .container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+  }
+
+  .value {
+    background: #8527e6;
+    border-radius: 6px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+  }
+
+  .level {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 350px;
+  }
+
+  .answers {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+</style>
+
+<div class="container">
+  <label>
+    Olá <strong>{{name}}</strong>! Tudo bem ?
+  </label>
+
+  <h3>{{title}}</h3>
+  <br />
+  <strong>{{description}}</strong>
+
+  <div class="level">
+    <span>Pouco provável</span>
+    <span>Muito provável</span>
+  </div>
+
+  <div class="answers">
+    <a class="value" href="">1</a>
+    <a class="value" href="">2</a>
+    <a class="value" href="">3</a>
+    <a class="value" href="">4</a>
+    <a class="value" href="">5</a>
+    <a class="value" href="">6</a>
+    <a class="value" href="">7</a>
+    <a class="value" href="">8</a>
+    <a class="value" href="">9</a>
+    <a class="value" href="">10</a>
+
+  </div>
+
+  <br />
+  <br />
+  <strong>Sua opnião é muito importante para nós.</strong>
+  <h3>Equipe <strong>NLW</strong></h3>
+</div>
