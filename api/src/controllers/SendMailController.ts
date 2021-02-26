@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { resolve } from 'path';
 import { getCustomRepository } from "typeorm";
+import { AppError } from "../errors/AppError";
 import { SurveyRepository } from "../repositories/SurveysRepository";
 import { SurveysUsersRepository } from "../repositories/SurveysUsersRepository";
 import { UserRepository } from "../repositories/UserRepository";
@@ -24,9 +25,7 @@ class SendMailController {
 
     const survey = await surveyRepository.findOne({ id: survey_id })
     if (!survey) {
-      return response.status(400).json({
-        error: "Survey does not exists",
-      })
+      throw new AppError("Survey does not exists");
     }
 
     const surveyUserAlreadyExists = await surveyUserRepository.findOne({
