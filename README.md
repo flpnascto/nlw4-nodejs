@@ -1,8 +1,13 @@
-
+# NEXT LEVEL WEEK #4 - Trilha NODE.JS
+<p ling="center">
+    <img src="./nlw4_wallpaper.png" alt="logo">
 <p align="center">
     <img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" alt="Typescript">
     <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-    <img src="https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white"" alt="Express"> 
+    <img src="https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white"" alt="Express">
+    <img src="https://img.shields.io/badge/-sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"" alt="sqlite">
+    <img src="https://img.shields.io/badge/-JEST-C21325?style=for-the-badge&logo=jest&logoColor=white"" alt="sqlite"> 
+                                                                                                                           
 </p>
 
 #### :wrench: em contrução :hammer:
